@@ -1,0 +1,110 @@
+.contrib-main {
+  padding: 0 2rem 3rem;
+}
+
+.contrib-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  animation: rise 600ms ease-out;
+}
+
+.contrib-header h1 {
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin: 0.6rem auto;
+  color: var(--text-main);
+}
+
+.contrib-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  animation: rise 650ms ease-out;
+}
+
+.contrib-card {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(21, 66, 114, 0.12);
+  border-radius: 18px;
+  padding: 1.4rem;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.contrib-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(18, 58, 102, 0.16);
+}
+
+.contrib-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(18, 58, 102, 0.18);
+  flex-shrink: 0;
+}
+
+.contrib-info h2 {
+  margin: 0 0 0.2rem;
+  font-size: 1.1rem;
+  font-family: var(--heading-font);
+  color: var(--text-main);
+}
+
+.contrib-role {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+  margin-bottom: 0.55rem;
+}
+
+.contrib-info p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--muted-text);
+  line-height: 1.55;
+}
+
+.contrib-back {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contrib-back a {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent-soft);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(20, 70, 130, 0.18);
+  background: rgba(255, 255, 255, 0.7);
+  transition: background 140ms ease;
+}
+
+.contrib-back a:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+@media (max-width: 700px) {
+  .contrib-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contrib-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contrib-main {
+    padding: 0 1rem 2rem;
+  }
+}
