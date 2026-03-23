@@ -1,16 +1,65 @@
-# React + Vite
+# GitHub Copilot Dev Days Chennai 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Event website for GitHub Copilot Dev Days at St. Joseph's Institute of Technology, Chennai.
 
-Currently, two official plugins are available:
+## 📋 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Event Date:** March 28, 2026  
+**Time:** 8:00 AM - 1:00 PM IST  
+**Venue:** St. Joseph's Institute of Technology, Chennai  
+**Capacity:** 200 students
 
-## React Compiler
+## 🚀 Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Development
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The app will run on `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## 📦 Deployment
+
+The `dist/` folder contains the production build. Deploy using:
+
+- **Vercel:** `vercel`
+- **Netlify:** Drag & drop the `dist/` folder
+- **GitHub Pages:** Push to `gh-pages` branch
+- **Azure Static Web Apps:** Connect your repository
+
+### Environment Variables
+
+Create `.env.production` for production URLs:
+
+```
+VITE_LUMA_EVENT_URL=https://luma.com/6zv3rbj1
+VITE_SPEAKER_CALL_URL=https://www.linkedin.com/company/github/jobs/
+```
+
+## 🛠️ Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint issues
+
+## 📝 Tech Stack
+
+- **React 19** with Hooks
+- **Vite** for fast builds
+- **React Router** for navigation
+- **CSS** for styling
+
+## 📄 License
+
+Copyright 2026 GitHub Copilot Dev Days Chennai.
